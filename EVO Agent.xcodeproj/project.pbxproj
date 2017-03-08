@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D76F86EB1E70AA09009BC76A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76F86EA1E70AA09009BC76A /* AppDelegate.swift */; };
+		D76F86ED1E70AA09009BC76A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76F86EC1E70AA09009BC76A /* ViewController.swift */; };
+		D76F86F01E70AA09009BC76A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D76F86EE1E70AA09009BC76A /* Main.storyboard */; };
+		D76F86F21E70AA09009BC76A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D76F86F11E70AA09009BC76A /* Assets.xcassets */; };
+		D76F86F51E70AA09009BC76A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D76F86F31E70AA09009BC76A /* LaunchScreen.storyboard */; };
+		D76F87001E70AA0B009BC76A /* EVO_AgentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76F86FF1E70AA0B009BC76A /* EVO_AgentTests.swift */; };
+		D76F870B1E70AA0B009BC76A /* EVO_AgentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76F870A1E70AA0B009BC76A /* EVO_AgentUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D76F86FC1E70AA0B009BC76A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D76F86DF1E70AA08009BC76A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D76F86E61E70AA08009BC76A;
+			remoteInfo = "EVO Agent";
+		};
+		D76F87071E70AA0B009BC76A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D76F86DF1E70AA08009BC76A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D76F86E61E70AA08009BC76A;
+			remoteInfo = "EVO Agent";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D76F86E71E70AA09009BC76A /* EVO Agent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EVO Agent.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D76F86EA1E70AA09009BC76A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D76F86EC1E70AA09009BC76A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D76F86EF1E70AA09009BC76A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D76F86F11E70AA09009BC76A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D76F86F41E70AA09009BC76A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D76F86F61E70AA09009BC76A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D76F86FB1E70AA0B009BC76A /* EVO AgentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EVO AgentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D76F86FF1E70AA0B009BC76A /* EVO_AgentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EVO_AgentTests.swift; sourceTree = "<group>"; };
+		D76F87011E70AA0B009BC76A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D76F87061E70AA0B009BC76A /* EVO AgentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EVO AgentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D76F870A1E70AA0B009BC76A /* EVO_AgentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EVO_AgentUITests.swift; sourceTree = "<group>"; };
+		D76F870C1E70AA0B009BC76A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D76F86E41E70AA08009BC76A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D76F86F81E70AA0B009BC76A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D76F87031E70AA0B009BC76A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D76F86DE1E70AA08009BC76A = {
+			isa = PBXGroup;
+			children = (
+				D76F86E91E70AA09009BC76A /* EVO Agent */,
+				D76F86FE1E70AA0B009BC76A /* EVO AgentTests */,
+				D76F87091E70AA0B009BC76A /* EVO AgentUITests */,
+				D76F86E81E70AA09009BC76A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D76F86E81E70AA09009BC76A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D76F86E71E70AA09009BC76A /* EVO Agent.app */,
+				D76F86FB1E70AA0B009BC76A /* EVO AgentTests.xctest */,
+				D76F87061E70AA0B009BC76A /* EVO AgentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D76F86E91E70AA09009BC76A /* EVO Agent */ = {
+			isa = PBXGroup;
+			children = (
+				D76F86EA1E70AA09009BC76A /* AppDelegate.swift */,
+				D76F86EC1E70AA09009BC76A /* ViewController.swift */,
+				D76F86EE1E70AA09009BC76A /* Main.storyboard */,
+				D76F86F11E70AA09009BC76A /* Assets.xcassets */,
+				D76F86F31E70AA09009BC76A /* LaunchScreen.storyboard */,
+				D76F86F61E70AA09009BC76A /* Info.plist */,
+			);
+			path = "EVO Agent";
+			sourceTree = "<group>";
+		};
+		D76F86FE1E70AA0B009BC76A /* EVO AgentTests */ = {
+			isa = PBXGroup;
+			children = (
+				D76F86FF1E70AA0B009BC76A /* EVO_AgentTests.swift */,
+				D76F87011E70AA0B009BC76A /* Info.plist */,
+			);
+			path = "EVO AgentTests";
+			sourceTree = "<group>";
+		};
+		D76F87091E70AA0B009BC76A /* EVO AgentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D76F870A1E70AA0B009BC76A /* EVO_AgentUITests.swift */,
+				D76F870C1E70AA0B009BC76A /* Info.plist */,
+			);
+			path = "EVO AgentUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D76F86E61E70AA08009BC76A /* EVO Agent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D76F870F1E70AA0B009BC76A /* Build configuration list for PBXNativeTarget "EVO Agent" */;
+			buildPhases = (
+				D76F86E31E70AA08009BC76A /* Sources */,
+				D76F86E41E70AA08009BC76A /* Frameworks */,
+				D76F86E51E70AA08009BC76A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EVO Agent";
+			productName = "EVO Agent";
+			productReference = D76F86E71E70AA09009BC76A /* EVO Agent.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D76F86FA1E70AA0B009BC76A /* EVO AgentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D76F87121E70AA0B009BC76A /* Build configuration list for PBXNativeTarget "EVO AgentTests" */;
+			buildPhases = (
+				D76F86F71E70AA0B009BC76A /* Sources */,
+				D76F86F81E70AA0B009BC76A /* Frameworks */,
+				D76F86F91E70AA0B009BC76A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D76F86FD1E70AA0B009BC76A /* PBXTargetDependency */,
+			);
+			name = "EVO AgentTests";
+			productName = "EVO AgentTests";
+			productReference = D76F86FB1E70AA0B009BC76A /* EVO AgentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D76F87051E70AA0B009BC76A /* EVO AgentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D76F87151E70AA0B009BC76A /* Build configuration list for PBXNativeTarget "EVO AgentUITests" */;
+			buildPhases = (
+				D76F87021E70AA0B009BC76A /* Sources */,
+				D76F87031E70AA0B009BC76A /* Frameworks */,
+				D76F87041E70AA0B009BC76A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D76F87081E70AA0B009BC76A /* PBXTargetDependency */,
+			);
+			name = "EVO AgentUITests";
+			productName = "EVO AgentUITests";
+			productReference = D76F87061E70AA0B009BC76A /* EVO AgentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D76F86DF1E70AA08009BC76A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = dicemediagroup;
+				TargetAttributes = {
+					D76F86E61E70AA08009BC76A = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = WVBPB459F4;
+					};
+					D76F86FA1E70AA0B009BC76A = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = D76F86E61E70AA08009BC76A;
+					};
+					D76F87051E70AA0B009BC76A = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = D76F86E61E70AA08009BC76A;
+					};
+				};
+			};
+			buildConfigurationList = D76F86E21E70AA08009BC76A /* Build configuration list for PBXProject "EVO Agent" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D76F86DE1E70AA08009BC76A;
+			productRefGroup = D76F86E81E70AA09009BC76A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D76F86E61E70AA08009BC76A /* EVO Agent */,
+				D76F86FA1E70AA0B009BC76A /* EVO AgentTests */,
+				D76F87051E70AA0B009BC76A /* EVO AgentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D76F86E51E70AA08009BC76A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D76F86F51E70AA09009BC76A /* LaunchScreen.storyboard in Resources */,
+				D76F86F21E70AA09009BC76A /* Assets.xcassets in Resources */,
+				D76F86F01E70AA09009BC76A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D76F86F91E70AA0B009BC76A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D76F87041E70AA0B009BC76A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D76F86E31E70AA08009BC76A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D76F86ED1E70AA09009BC76A /* ViewController.swift in Sources */,
+				D76F86EB1E70AA09009BC76A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D76F86F71E70AA0B009BC76A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D76F87001E70AA0B009BC76A /* EVO_AgentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D76F87021E70AA0B009BC76A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D76F870B1E70AA0B009BC76A /* EVO_AgentUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D76F86FD1E70AA0B009BC76A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D76F86E61E70AA08009BC76A /* EVO Agent */;
+			targetProxy = D76F86FC1E70AA0B009BC76A /* PBXContainerItemProxy */;
+		};
+		D76F87081E70AA0B009BC76A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D76F86E61E70AA08009BC76A /* EVO Agent */;
+			targetProxy = D76F87071E70AA0B009BC76A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D76F86EE1E70AA09009BC76A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D76F86EF1E70AA09009BC76A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D76F86F31E70AA09009BC76A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D76F86F41E70AA09009BC76A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D76F870D1E70AA0B009BC76A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D76F870E1E70AA0B009BC76A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D76F87101E70AA0B009BC76A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "EVO Agent/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "tryit.EVO-Agent";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D76F87111E70AA0B009BC76A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "EVO Agent/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "tryit.EVO-Agent";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D76F87131E70AA0B009BC76A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "EVO AgentTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "tryit.EVO-AgentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EVO Agent.app/EVO Agent";
+			};
+			name = Debug;
+		};
+		D76F87141E70AA0B009BC76A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "EVO AgentTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "tryit.EVO-AgentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EVO Agent.app/EVO Agent";
+			};
+			name = Release;
+		};
+		D76F87161E70AA0B009BC76A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "EVO AgentUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "tryit.EVO-AgentUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "EVO Agent";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		D76F87171E70AA0B009BC76A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "EVO AgentUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "tryit.EVO-AgentUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "EVO Agent";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D76F86E21E70AA08009BC76A /* Build configuration list for PBXProject "EVO Agent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D76F870D1E70AA0B009BC76A /* Debug */,
+				D76F870E1E70AA0B009BC76A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D76F870F1E70AA0B009BC76A /* Build configuration list for PBXNativeTarget "EVO Agent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D76F87101E70AA0B009BC76A /* Debug */,
+				D76F87111E70AA0B009BC76A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D76F87121E70AA0B009BC76A /* Build configuration list for PBXNativeTarget "EVO AgentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D76F87131E70AA0B009BC76A /* Debug */,
+				D76F87141E70AA0B009BC76A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D76F87151E70AA0B009BC76A /* Build configuration list for PBXNativeTarget "EVO AgentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D76F87161E70AA0B009BC76A /* Debug */,
+				D76F87171E70AA0B009BC76A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D76F86DF1E70AA08009BC76A /* Project object */;
+}
