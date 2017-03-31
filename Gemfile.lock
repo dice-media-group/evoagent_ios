@@ -11,6 +11,7 @@ GEM
       public_suffix (~> 2.0, >= 2.0.2)
     babosa (1.0.2)
     claide (1.0.1)
+    coderay (1.1.1)
     colored (1.2)
     commander (4.4.3)
       highline (~> 1.7.2)
@@ -97,6 +98,7 @@ GEM
       little-plugger (~> 1.1)
       multi_json (~> 1.10)
     memoist (0.15.0)
+    method_source (0.8.2)
     mime-types (3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
@@ -108,7 +110,12 @@ GEM
     nanaimo (0.2.3)
     os (0.9.6)
     plist (3.2.0)
+    pry (0.10.4)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
     public_suffix (2.0.5)
+    rb-readline (0.5.4)
     representable (2.3.0)
       uber (~> 0.0.7)
     retriable (2.1.0)
@@ -121,6 +128,7 @@ GEM
       jwt (~> 1.5)
       multi_json (~> 1.10)
     slack-notifier (1.5.1)
+    slop (3.6.0)
     spaceship (1.0.0)
       babosa (= 1.0.2)
       colored
@@ -159,7 +167,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  dotenv!
   fastlane (~> 2.23)!
+  pry!
+  rb-readline (~> 0.5.4)!
   spaceship (~> 1.0)!
 
 BUNDLED WITH
