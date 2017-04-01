@@ -1,0 +1,4 @@
+app_identifier "com.dicemediagroup.evoagent" # The bundle identifier of your app
+apple_id "betterbilling@mac.com" # Your Apple ID Email address
+team_id "WVBPB459F4"  # Developer Portal Team ID
+itc_team_id "12345678" # Your iTunes Connect Team ID

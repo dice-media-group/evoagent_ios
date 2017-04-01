@@ -1,75 +1,73 @@
+# Customise this file, documentation can be found here:
+# https://github.com/fastlane/fastlane/tree/master/fastlane/docs
+# All available actions: https://docs.fastlane.tools/actions
+# can also be listed using the `fastlane actions` command
+
+# Change the syntax highlighting to Ruby
+# All lines starting with a # are ignored when running `fastlane`
+
+# If you want to automatically update fastlane if a new version is available:
+# update_fastlane
+
 # This is the minimum version number required.
 # Update this, if you use features of a newer version
-fastlane_version "2.11.0"
-require 'xcodeproj'
+fastlane_version "2.24.0"
 
 default_platform :ios
 
 platform :ios do
+  before_all do
+    # ENV["SLACK_URL"] = "https://hooks.slack.com/services/..."
+    
+    
+  end
 
-  lane :newApp do
-    produce(
-        username: 'your.name@gmail.com',
-        app_identifier: ENV['CUSTOM_APP_ID'],
-        app_name: 'YourAppName',
-        language: 'English',
-        app_version: '1.0',
-        sku: '123',
-        team_name: 'Your Name' # only necessary when in multiple teams
-      )
-
-    # Post to Slack
-    slack(
-      message: "Created new App!"
-    )
+  desc "Runs all the tests"
+  lane :test do
+    scan
   end
 
   desc "Submit a new Beta Build to Apple TestFlight"
-  lane :beta do    
-    # Fetch and Create Profiles
-    match
+  desc "This will also make sure the profile is up to date"
+  lane :beta do
+    # match(type: "appstore") # more information: https://codesigning.guide
+    gym(scheme: "EVO Agent") # Build your app - more options available
+    pilot
 
-    # Retrieve App Name and ID from environment
-    name = ENV['CUSTOM_APP_NAME']
-    app_id = ENV['CUSTOM_APP_ID']
-    team_id = ENV['CUSTOM_TEAM_ID']
+    # sh "your_script.sh"
+    # You can also use other beta testing services here (run `fastlane actions`)
+  end
 
-    xcodeprojpath = "../platforms/ios/" + name + ".xcodeproj"
+  desc "Deploy a new version to the App Store"
+  lane :release do
+    # match(type: "appstore")
+    # snapshot
+    gym(scheme: "EVO Agent") # Build your app - more options available
+    deliver(force: true)
+    # frameit
+  end
 
-    # Update Code Signing
-    update_project_codesigning(path: xcodeprojpath, use_automatic_signing: false, team_id: team_id)
+  # You can define as many lanes as you want
 
-    # Patch Project Settings
-    proj = Xcodeproj::Project.open("../" + xcodeprojpath)
-    
-    proj.build_configurations.each do |item|
-        item.build_settings['DEVELOPMENT_TEAM'] = team_id
-        item.build_settings['CODE_SIGN_IDENTITY[sdk=iphoneos*]'] = "iPhone Developer"
-        item.build_settings['PROVISIONING_PROFILE_SPECIFIER'] = "match AppStore " + app_id
-    end
+  after_all do |lane|
+    # This block is called, only if the executed lane was successful
 
-    proj.recreate_user_schemes
-    proj.save
-    # End of Patching Project Settings
+    # slack(
+    #   message: "Successfully deployed new App Update."
+    # )
+  end
 
-    increment_build_number({
-      build_number: latest_testflight_build_number + 1,
-      xcodeproj: xcodeprojpath
-    })
-    
-    # Build the IPA
-    gym
-
-    # Upload the IPA to Testflight
-    testflight(
-       skip_waiting_for_build_processing: true, 
-       ipa: "./build/MyApp.ipa"
-    )
-
-    # Post to Slack
-    slack(
-      message: "Successfully Upload " + name + " to ITC Testflight",
-      default_payloads: [:git_branch, :last_git_commit_message]
-    )
+  error do |lane, exception|
+    # slack(
+    #   message: exception.message,
+    #   success: false
+    # )
   end
 end
+
+
+# More information about multiple platforms in fastlane: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Platforms.md
+# All available actions: https://docs.fastlane.tools/actions
+
+# fastlane reports which actions are used
+# No personal data is recorded. Learn more at https://github.com/fastlane/enhancer
